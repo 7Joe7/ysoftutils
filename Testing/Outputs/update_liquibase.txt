@@ -1,0 +1,72 @@
+Testing with:
+Java:             Java 1.8 32bit
+-----------------------------------------------------------------------
+Command: C:\Progra~2\Java\jre1.8.0_40\bin\java.exe -jar C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\AppData\Local\Temp\database-changelog.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+-----------------------------------------------------------------------
+Success: pid 1392 exit 0
+-----------------------------------------------------------------------
+StdErr:
+Liquibase Update Successful
+-----------------------------------------------------------------------
+Testing with:
+Java:             Java 1.7 32bit
+-----------------------------------------------------------------------
+Command: C:\Progra~2\Java\jre7\bin\java.exe -jar C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\AppData\Local\Temp\database-changelog.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+-----------------------------------------------------------------------
+Success: pid 3112 exit 0
+-----------------------------------------------------------------------
+StdErr:
+Liquibase Update Successful
+-----------------------------------------------------------------------
+Testing with:
+Java:             Java 1.6 32bit
+-----------------------------------------------------------------------
+Command: C:\Progra~2\Java\jre6\bin\java.exe -jar C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\AppData\Local\Temp\database-changelog.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+-----------------------------------------------------------------------
+Success: pid 8708 exit 0
+-----------------------------------------------------------------------
+StdErr:
+Liquibase Update Successful
+-----------------------------------------------------------------------
+Testing with:
+Java:             Java 1.8 64bit
+-----------------------------------------------------------------------
+Command: C:\Progra~1\Java\jre1.8.0_31\bin\java.exe -jar C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\AppData\Local\Temp\database-changelog.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+-----------------------------------------------------------------------
+Success: pid 8528 exit 0
+-----------------------------------------------------------------------
+StdErr:
+Liquibase Update Successful
+-----------------------------------------------------------------------
+Testing with:
+Java:             Java 1.7 64bit
+-----------------------------------------------------------------------
+Command: C:\Progra~1\Java\jre7\bin\java.exe -jar C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\AppData\Local\Temp\database-changelog.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+-----------------------------------------------------------------------
+Success: pid 3696 exit 0
+-----------------------------------------------------------------------
+StdErr:
+Liquibase Update Successful
+-----------------------------------------------------------------------
+Testing with:
+Java:             Java 1.6 64bit
+-----------------------------------------------------------------------
+Command: C:\Progra~1\Java\jre6\bin\java.exe -jar C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\AppData\Local\Temp\database-changelog.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+-----------------------------------------------------------------------
+Success: pid 9672 exit 0
+-----------------------------------------------------------------------
+StdErr:
+Liquibase Update Successful
+-----------------------------------------------------------------------
+Testing with:
+Java:             Environment Java
+-----------------------------------------------------------------------
+Command: java -jar C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\AppData\Local\Temp\database-changelog.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+-----------------------------------------------------------------------
+Success: pid 8820 exit 0
+-----------------------------------------------------------------------
+StdErr:
+Liquibase Update Successful
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------

@@ -1,0 +1,53 @@
+apply plugin: 'maven'
+
+repositories {
+    maven {
+        url "http://repo.ysoft.local/content/groups/ysoft/"
+    }
+}
+
+configurations {
+    installerInfrastructure
+}
+
+dependencies {
+    installerInfrastructure group: 'com.cratchpaper.nsis', name: 'unsis', version: '2.46.5.4-YSOFT', ext: 'zip'
+}
+
+task extractNsis(type: Copy) {
+    description = "Download and unpack NSIS tool for packaging."
+    from zipTree(configurations.installerInfrastructure.singleFile)
+    into "build/"
+}
+
+task prepare {
+    description = "Prepare layout"
+}
+
+prepare.dependsOn extractNsis
+
+task buildInstallExe(type: Exec) {
+    description = "Build my own .exe from .nsi."
+    executable "build/nsis/makensis.exe"
+    args = ["nsis_src/general.nsi"]
+}
+
+
+// ---------------------------- Testing ----------------------------------------
+
+task startInstall(type: Exec) {
+    description = "Start the built installer.exe"
+    workingDir = "./nsis_src/results"
+    commandLine 'cmd', '/c', 'installer.exe'
+}
+
+task testInstall(type: Exec) {
+    description = "Start the built installer.exe"
+    workingDir = "./nsis_src/results"
+    commandLine 'cmd', '/c', 'installer.exe /S'
+}
+
+startInstall.dependsOn buildInstallExe
+testInstall.dependsOn buildInstallExe
+
+// ---------------------------- Testing ----------------------------------------

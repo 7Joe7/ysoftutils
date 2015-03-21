@@ -1,0 +1,1038 @@
+2015-03-13 10:18:46.862 | Update resulted with exit code 2. Message: Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+2015-03-13 10:19:19.501 | java -jar C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar --classpath="C:\Users\erneker\AppData\Loca l\Temp\jtds.jar;C:\Users\erneker\AppData\Local\Temp\database-changelog.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserv er://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:19:19.635 | Update resulted with exit code 2. Message: Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+2015-03-13 10:20:27.160 | java C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar --classpath="C:\Users\erneker\AppData\Loca l\Temp\jtds.jar;C:\Users\erneker\AppData\Local\Temp\database-changelog.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserv er://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:20:27.292 | Update resulted with exit code 2. Message: Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+2015-03-13 10:21:01.935 | java C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar --classpath="C:\Users\erneker\AppData\Loca l\Temp\jtds.jar;C:\Users\erneker\AppData\Local\Temp\database-changelog.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserv er://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:21:02.061 | Update resulted with exit code 2. Message: Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+2015-03-13 10:21:43.443 | java C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar --classpath="C:\Users\erneker\AppData\Loca l\Temp\jtds.jar;C:\Users\erneker\AppData\Local\Temp\database-changelog.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserv er://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:21:43.669 | Update resulted with exit code 1. Message: Error: Could not find or load main class C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar
+
+2015-03-13 10:30:34.961 | java C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserv er://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:30:35.195 | Update resulted with exit code 1. Message: Error: Could not find or load main class C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar
+
+2015-03-13 10:31:47.536 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserv er://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:31:47.868 | Update resulted with exit code -2. Message: Errors:
+  Unexpected value er://10.0.11.172:1433/joe-test: parameters must start with a '--'
+
+Usage: java -jar liquibase.jar [options] [command]
+
+Standard Commands:
+ update                         Updates database to current version
+ updateSQL                      Writes SQL to update database to current
+                                version to STDOUT
+ updateCount <num>              Applies next NUM changes to the database
+ updateSQL <num>                Writes SQL to apply next NUM changes
+                                to the database
+ rollback <tag>                 Rolls back the database to the the state is was
+                                when the tag was applied
+ rollbackSQL <tag>              Writes SQL to roll back the database to that
+                                state it was in when the tag was applied
+                                to STDOUT
+ rollbackToDate <date/time>     Rolls back the database to the the state is was
+                                at the given date/time.
+                                Date Format: yyyy-MM-dd'T'HH:mm:ss
+ rollbackToDateSQL <date/time>  Writes SQL to roll back the database to that
+                                state it was in at the given date/time version
+                                to STDOUT
+ rollbackCount <value>          Rolls back the last <value> change sets
+                                applied to the database
+ rollbackCountSQL <value>       Writes SQL to roll back the last
+                                <value> change sets to STDOUT
+                                applied to the database
+ futureRollbackSQL              Writes SQL to roll back the database to the 
+                                current state after the changes in the 
+                                changeslog have been applied
+ futureRollbackSQL <value>      Writes SQL to roll back the database to the 
+                                current state after <value> changes in the 
+                                changeslog have been applied
+ updateTestingRollback          Updates database, then rolls back changes before
+                                updating again. Useful for testing
+                                rollback support
+ generateChangeLog              Writes Change Log XML to copy the current state
+                                of the database to standard out
+
+Diff Commands
+ diff [diff parameters]          Writes description of differences
+                                 to standard out
+ diffChangeLog [diff parameters] Writes Change Log XML to update
+                                 the database
+                                 to the reference database to standard out
+
+Documentation Commands
+ dbDoc <outputDirectory>         Generates Javadoc-like documentation
+                                 based on current database and change log
+
+Maintenance Commands
+ tag <tag string>          'Tags' the current database state for future rollback
+ status [--verbose]        Outputs count (list if --verbose) of unrun changesets
+ validate                  Checks changelog for errors
+ calculateCheckSum <id>    Calculates and prints a checksum for the changeset
+                           with the given id in the format filepath::id::author.
+ clearCheckSums            Removes all saved checksums from database log.
+                           Useful for 'MD5Sum Check Failed' errors
+ changelogSync             Mark all changes as executed in the database
+ changelogSyncSQL          Writes SQL to mark all changes as executed 
+                           in the database to STDOUT
+ markNextChangeSetRan      Mark the next change changes as executed 
+                           in the database
+ markNextChangeSetRanSQL   Writes SQL to mark the next change 
+                           as executed in the database to STDOUT
+ listLocks                 Lists who currently has locks on the
+                           database changelog
+ releaseLocks              Releases all locks on the database changelog
+ dropAll                   Drop all database objects owned by user
+
+Required Parameters:
+ --changeLogFile=<path and filename>        Migration file
+ --username=<value>                         Database username
+ --password=<value>  | -p (prompt)          Database password
+ --url=<value>                              Database URL
+
+Optional Parameters:
+ --classpath=<value>                        Classpath containing
+                                            migration files and JDBC Driver
+ --driver=<jdbc.driver.ClassName>           Database driver class name
+ --databaseClass=<database.ClassName>       custom liquibase.database.Database
+                                            implementation to use
+ --defaultSchemaName=<name>                 Default database schema to use
+ --contexts=<value>                         ChangeSet contexts to execute
+ --defaultsFile=</path/to/file.properties>  File with default option values
+                                            (default: ./liquibase.properties)
+ --driverPropertiesFile=</path/to/file.properties>  File with custom properties
+                                            to be set on the JDBC connection
+                                            to be created
+ --includeSystemClasspath=<true|false>      Include the system classpath
+                                            in the Liquibase classpath
+                                            (default: true)
+ --promptForNonLocalDatabase=<true|false>   Prompt if non-localhost
+                                            databases (default: false)
+ --logLevel=<level>                         Execution log level
+                                            (debug, info, warning, severe, off
+ --logFile=<file>                           Log file
+ --currentDateTimeFunction=<value>          Overrides current date time function
+                                            used in SQL.
+                                            Useful for unsupported databases
+ --help                                     Prints this message
+ --version                                  Prints this version information
+
+Required Diff Parameters:
+ --referenceUsername=<value>                Reference Database username
+ --referencePassword=<value> | -rp (prompt) Reference Database password
+ --referenceUrl=<value>                     Reference Database URL
+
+Optional Diff Parameters:
+ --referenceDriver=<jdbc.driver.ClassName>  Reference Database driver class name
+ --dataOutputDirectory=DIR                  Output data as CSV in the given 
+                                            directory
+
+Change Log Properties:
+ -D<property.name>=<property.value>         Pass a name/value pair for
+                                            substitution in the change log(s)
+
+Default value for parameters can be stored in a file called
+'liquibase.properties' that is read from the current working directory.
+
+Full documentation is available at
+http://www.liquibase.org/manual/command_line
+
+
+2015-03-13 10:32:38.692 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:32:39.228 | Update resulted with exit code -1. Message: Liquibase Update Failed: Cannot find database driver: net.sourceforge.jtds.jdbc.Driver
+SEVERE 3/13/15 10:32 AM:liquibase: Cannot find database driver: net.sourceforge.jtds.jdbc.Driver
+liquibase.exception.DatabaseException: java.lang.RuntimeException: Cannot find database driver: net.sourceforge.jtds.jdbc.Driver
+	at liquibase.integration.commandline.CommandLineUtils.createDatabaseObject(CommandLineUtils.java:111)
+	at liquibase.integration.commandline.Main.doMigration(Main.java:745)
+	at liquibase.integration.commandline.Main.main(Main.java:134)
+Caused by: java.lang.RuntimeException: Cannot find database driver: net.sourceforge.jtds.jdbc.Driver
+	at liquibase.integration.commandline.CommandLineUtils.createDatabaseObject(CommandLineUtils.java:70)
+	... 2 more
+
+
+For more information, use the --logLevel flag)
+
+2015-03-13 10:34:56.460 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:35:00.811 | Update resulted with exit code 0. Message: INFO 3/13/15 10:34 AM:liquibase: Successfully acquired change log lock
+INFO 3/13/15 10:34 AM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/initial-db-structure.xml::money-account-tables::mihalcin::(Checksum: 3:5f5804b3b448283f817a2f59faa028f4) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/initial-db-structure.xml::spm-tables::mihalcin::(Checksum: 3:fe5d93b2a327e7d09f1ad4a46cbbb659) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/initial-db-structure.xml::periodic-recharge-tables::mihalcin::(Checksum: 3:d605695f41accf222f2ec01fe49b8c83) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/initial-db-structure.xml::cash-desk-tables::mihalcin::(Checksum: 3:e66e5bbcca5dc0c6db4ba8f0f40dd94a) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/initial-db-structure.xml::configuration::mihalcin::(Checksum: 3:32e31b661ca5f430099bd7f7e5de5591) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/security-db-structure.xml::security-tables::mihalcin::(Checksum: 3:24f5891ac71e863ec18c00ab642af9a2) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/configuration-defaults.xml::configuration-default-values::mihalcin::(Checksum: 3:3696c03f3bf6c1f1e729af33f61028c7) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/receipt-template-defaults.xml::initial-deposit-receipt-template::hvizdos::(Checksum: 3:eefddc3d8718c93cb7bac4c48c994826) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/receipt-template-defaults.xml::initial-withdrawal-receipt-template::hvizdos::(Checksum: 3:f8d3bc10170a748efbc3bdfee1ba0358) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/receipt-template-defaults.xml::initial-refund-receipt-template::hvizdos::(Checksum: 3:9aca555d523b83198240e02ee2cb9dc4) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/quartz/create-quartz-tables.xml::create-quartz-tables::hvizdos::(Checksum: 3:e870d5a1673b28c18724678662c0d33e) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/api-user-roles.xml::initial-api-user-roles::silovsky::(Checksum: 3:fe643bf3ce09296a2150be818611dd3a) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.0.0/minimalistic-changelog.xml::insert-demo-data::mihalcin::(Checksum: 3:a802f93c6c29c43761ce3638abd62df6) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.1.0/enable-visibility-of-account-history.xml::enable-visibility-of-account-history::silovsky::(Checksum: 3:4a4269b74186bd23bf3b3d82c0240c0a) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.2.0/configuration-cleanup.xml::removal-of-obsolete-paypal-configuration::mihalcin::(Checksum: 3:07581270e895a2f669b9b4a38c60909e) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.2.0/create-incident-service-tables.xml::incident-service::zatkovsky::(Checksum: 3:92c5112afe975271faf421f5a26757e7) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.2.0/new-indexes.xml::new-indexes-as-performance-optimization::mihalcin::(Checksum: 3:a21ad82fc8c556cfb089cd67df7a81a5) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.2.0/license-support-id.xml::license-support-id-configuration-value::mihalcin::(Checksum: 3:c85c3d7aad5ae68dbd0d23fb3c1ed282) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.2.0/new-initial-deposit-event.xml::new-initial-cashdesk-deposit-event::silovsky::(Checksum: 3:c22d90504291285119570e284092b15b) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.2.0/refactoring-migrations.xml::top-up-recharge-migration::hvizdos::(Checksum: 3:5d85cf9a888e9a368ee417371ed68a00) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.3.0/requester-in-audit-event.xml::requester-in-audit-event::mihalcin::(Checksum: 3:ba3cabfab04b0e6733310f02cc8c6b32) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.3.0/requester-in-audit-event.xml::update-requester-in-old-records::mihalcin::(Checksum: 3:32ed0ac0e971a2271a112f8d5d736a5c) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.3.0/add-reservation-expiration-configuration.xml::add-reservation-expiration-configuration::mihalcin::(Checksum: 3:da6389d46b5fa4677a0d7451e1f9c184) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.3.0/index-for-money-account-filter.xml::index-for-money-account-filter::mihalcin::(Checksum: 3:79bd70a9112a2254846ac121d8827822) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.4.0/add-initial-balance-configuration.xml::add-initial-balance-configuration::silovsky::(Checksum: 3:36893791949b95bc9029cda17e06dd6c) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.5.0/initial-moneybox-deposit-rename.xml::initial-moneybox-deposit-rename::silovsky::(Checksum: 3:c153f5765e2e89e3e0af0c567586a4dc) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.5.0/audit-event-amount-migration.xml::audit-event-amount-migration::silovsky::(Checksum: 3:4fa7e26cd72b6798af1d0d7e51553d6a) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.5.0/cashdesk-unique-constraint-rework.xml::drop-old-constraint::mihalcin::(Checksum: 3:077f841f9ffe41df473e44ee4fb73b52) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.5.0/cashdesk-unique-constraint-rework.xml::add-deleted-flag::mihalcin::(Checksum: 3:3b7f3d9b24c821b02d52e2a741811edb) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.5.0/cashdesk-unique-constraint-rework.xml::migrate-old-cash-desks::mihalcin::(Checksum: 3:5bb923208d483b1a62fa901b7a506623) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.5.0/cashdesk-unique-constraint-rework.xml::add-unique-constraint::mihalcin::(Checksum: 3:381329a344ee960097acb58fab50c65b) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.5.0/merchantAccount-invalidLoginCount.xml::merchantAccount-invalidLoginCount::zatkovsky::(Checksum: 3:ad2aa39310dbd216de7a50fd1cbb5193) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.6.0/notifications.xml::notifications::silovsky::(Checksum: 3:18bfb6fc0f77f940c4164d2ebe4c6aa5) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.6.0/add-payment-gateway-tables.xml::add-payment-gateway-table::hvizdos::(Checksum: 3:7e9c75a34d112ddfc7c9940cadac1176) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.6.0/add-payment-gateway-tables.xml::add-payment-gateway-references::hvizdos::(Checksum: 3:9fa5a637006df1395445b3927c8b37fe) to correct value
+INFO 3/13/15 10:34 AM:liquibase: Updating null or out of date checksum on changeSet 1.6.0/add-payment-gateway-tables.xml::add-deposit-expirat2015-03-13 10:43:28.890 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:43:31.226 | Update resulted with exit code 0. Message: 
+INFO 3/13/15 10:43 AM:liquibase: Successfully acquired change log lock
+INFO 3/13/15 10:43 AM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/13/15 10:43 AM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/13/15 10:43 AM:liquibase: Successfully released change log lock
+Liquibase Update Successful
+
+2015-03-13 10:44:11.291 | -------------------------------------------------------------------
+2015-03-13 10:44:11.295 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:44:13.428 | Update resulted with exit code 0. Message: 
+INFO 3/13/15 10:44 AM:liquibase: Successfully acquired change log lock
+INFO 3/13/15 10:44 AM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/13/15 10:44 AM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/13/15 10:44 AM:liquibase: Successfully released change log lock
+Liquibase Update Successful
+
+-------------------------------------------------------------------2015-03-13 10:45:17.150 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:45:19.488 | Update resulted with exit code 0. Message: 
+INFO 3/13/15 10:45 AM:liquibase: Successfully acquired change log lock
+INFO 3/13/15 10:45 AM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/13/15 10:45 AM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/13/15 10:45 AM:liquibase: Successfully released change log lock
+Liquibase Update Successful
+
+-------------------------------------------------------------------
+2015-03-13 10:46:24.780 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:46:24.917 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 10:48:06.816 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:48:06.951 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 10:49:38.662 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:49:38.795 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 10:50:15.316 | java -server -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:50:15.444 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 10:51:17.614 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:51:17.740 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 10:54:20.249 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:54:20.378 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 10:58:31.037 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 10:58:31.161 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 11:12:18.709 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:12:18.842 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 11:15:00.098 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:15:00.238 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 11:16:31.981 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:16:32.111 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 11:18:18.873 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:18:19.002 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 11:24:04.092 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:24:09.667 | Update resulted with exit code 0. Message: 
+Liquibase Update Successful
+
+-------------------------------------------------------------------
+2015-03-13 11:27:25.310 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml  --logLevel=debug --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:27:30.882 | Update resulted with exit code 0. Message: 
+DEBUG 3/13/15 11:27 AM: liquibase: Connected to sa@jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test
+DEBUG 3/13/15 11:27 AM: liquibase: Setting auto commit to false from true
+DEBUG 3/13/15 11:27 AM: liquibase: Executing QUERY database command: select schema_name()
+DEBUG 3/13/15 11:27 AM: liquibase: Computed checksum for 1426242446172 as a9c8af2bb2becfbd413468ce1017c2b6
+DEBUG 3/13/15 11:27 AM: liquibase: Executing QUERY database command: SELECT CONVERT(varchar(100), SERVERPROPERTY('COLLATION'))
+DEBUG 3/13/15 11:27 AM: liquibase: Executing QUERY database command: select count(*) from [dbo].[DATABASECHANGELOGLOCK]
+DEBUG 3/13/15 11:27 AM: liquibase: Executing QUERY database command: SELECT [LOCKED] FROM [dbo].[DATABASECHANGELOGLOCK] WHERE [ID]=1
+DEBUG 3/13/15 11:27 AM: liquibase: Lock Database
+DEBUG 3/13/15 11:27 AM: liquibase: Executing UPDATE database command: UPDATE [dbo].[DATABASECHANGELOGLOCK] SET [LOCKED] = 1, [LOCKEDBY] = 'NB367 (10.1.2.185)', [LOCKGRANTED] = '2015-03-13T11:27:26.230' WHERE [ID] = 1 AND [LOCKED] = 0
+INFO 3/13/15 11:27 AM: liquibase: Successfully acquired change log lock
+DEBUG 3/13/15 11:27 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:27 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:27 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:27 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:27 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:27 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:27 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:27 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:27 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:27 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:27 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:27 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:27 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2-------------------------------------------------------------------
+2015-03-13 11:29:08.462 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml  --logLevel=debug --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:29:08.607 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 11:31:17.658 | C:\Progra~2\Java\jre1.8.0_40\bin\java.exe -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml  --logLevel=debug --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:31:24.046 | Update resulted with exit code 0. Message: 
+DEBUG 3/13/15 11:31 AM: liquibase: Connected to sa@jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test
+DEBUG 3/13/15 11:31 AM: liquibase: Setting auto commit to false from true
+DEBUG 3/13/15 11:31 AM: liquibase: Executing QUERY database command: select schema_name()
+DEBUG 3/13/15 11:31 AM: liquibase: Computed checksum for 1426242679431 as 39c9e7a40424e7f21d3176a1c80339c7
+DEBUG 3/13/15 11:31 AM: liquibase: Executing QUERY database command: SELECT CONVERT(varchar(100), SERVERPROPERTY('COLLATION'))
+DEBUG 3/13/15 11:31 AM: liquibase: Executing QUERY database command: select count(*) from [dbo].[DATABASECHANGELOGLOCK]
+DEBUG 3/13/15 11:31 AM: liquibase: Executing QUERY database command: SELECT [LOCKED] FROM [dbo].[DATABASECHANGELOGLOCK] WHERE [ID]=1
+DEBUG 3/13/15 11:31 AM: liquibase: Lock Database
+DEBUG 3/13/15 11:31 AM: liquibase: Executing UPDATE database command: UPDATE [dbo].[DATABASECHANGELOGLOCK] SET [LOCKED] = 1, [LOCKEDBY] = 'NB367 (10.1.2.185)', [LOCKGRANTED] = '2015-03-13T11:31:19.526' WHERE [ID] = 1 AND [LOCKED] = 0
+INFO 3/13/15 11:31 AM: liquibase: Successfully acquired change log lock
+DEBUG 3/13/15 11:31 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:31 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:31 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:31 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:31 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:31 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:31 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:31 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:31 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:31 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:31 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:31 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:31 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2-------------------------------------------------------------------
+2015-03-13 11:42:59.418 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml  --logLevel=debug --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:42:59.561 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 11:45:48.471 | java.exe -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml  --logLevel=debug --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:45:48.609 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 11:46:16.169 | java.exe -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml  --logLevel=debug --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:46:16.309 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 11:46:30.712 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml  --logLevel=debug --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:46:30.844 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-13 11:47:10.729 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml  --logLevel=debug --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:47:16.017 | Update resulted with exit code 0. Message: 
+DEBUG 3/13/15 11:47 AM: liquibase: Connected to sa@jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test
+DEBUG 3/13/15 11:47 AM: liquibase: Setting auto commit to false from true
+DEBUG 3/13/15 11:47 AM: liquibase: Executing QUERY database command: select schema_name()
+DEBUG 3/13/15 11:47 AM: liquibase: Computed checksum for 1426243631606 as 2432420e59be20f7aa64a57eda6bef4c
+DEBUG 3/13/15 11:47 AM: liquibase: Executing QUERY database command: SELECT CONVERT(varchar(100), SERVERPROPERTY('COLLATION'))
+DEBUG 3/13/15 11:47 AM: liquibase: Executing QUERY database command: select count(*) from [dbo].[DATABASECHANGELOGLOCK]
+DEBUG 3/13/15 11:47 AM: liquibase: Executing QUERY database command: SELECT [LOCKED] FROM [dbo].[DATABASECHANGELOGLOCK] WHERE [ID]=1
+DEBUG 3/13/15 11:47 AM: liquibase: Lock Database
+DEBUG 3/13/15 11:47 AM: liquibase: Executing UPDATE database command: UPDATE [dbo].[DATABASECHANGELOGLOCK] SET [LOCKED] = 1, [LOCKEDBY] = 'NB367 (10.1.2.185)', [LOCKGRANTED] = '2015-03-13T11:47:11.661' WHERE [ID] = 1 AND [LOCKED] = 0
+INFO 3/13/15 11:47 AM: liquibase: Successfully acquired change log lock
+DEBUG 3/13/15 11:47 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:47 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:47 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:47 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:47 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:47 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:47 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:47 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:47 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:47 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:47 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:47 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:47 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2-------------------------------------------------------------------
+2015-03-13 11:52:02.097 | C:\Progra~2\Java\jre1.8.0_40\bin\java.exe -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml  --logLevel=debug --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 11:52:07.389 | Update resulted with exit code 0. Message: 
+DEBUG 3/13/15 11:52 AM: liquibase: Connected to sa@jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test
+DEBUG 3/13/15 11:52 AM: liquibase: Setting auto commit to false from true
+DEBUG 3/13/15 11:52 AM: liquibase: Executing QUERY database command: select schema_name()
+DEBUG 3/13/15 11:52 AM: liquibase: Computed checksum for 1426243923033 as 6c335e481f1c5e8647c3fe99e9df6bae
+DEBUG 3/13/15 11:52 AM: liquibase: Executing QUERY database command: SELECT CONVERT(varchar(100), SERVERPROPERTY('COLLATION'))
+DEBUG 3/13/15 11:52 AM: liquibase: Executing QUERY database command: select count(*) from [dbo].[DATABASECHANGELOGLOCK]
+DEBUG 3/13/15 11:52 AM: liquibase: Executing QUERY database command: SELECT [LOCKED] FROM [dbo].[DATABASECHANGELOGLOCK] WHERE [ID]=1
+DEBUG 3/13/15 11:52 AM: liquibase: Lock Database
+DEBUG 3/13/15 11:52 AM: liquibase: Executing UPDATE database command: UPDATE [dbo].[DATABASECHANGELOGLOCK] SET [LOCKED] = 1, [LOCKEDBY] = 'NB367 (10.1.2.185)', [LOCKGRANTED] = '2015-03-13T11:52:03.089' WHERE [ID] = 1 AND [LOCKED] = 0
+INFO 3/13/15 11:52 AM: liquibase: Successfully acquired change log lock
+DEBUG 3/13/15 11:52 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:52 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:52 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:52 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:52 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:52 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:52 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:52 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:52 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:52 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:52 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 11:52 AM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 11:52 AM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2-------------------------------------------------------------------
+2015-03-13 12:04:25.704 | C:\Progra~2\Java\jre1.8.0_40\bin\java.exe -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml  --logLevel=debug --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 12:04:25.734 | Update resulted with exit code error. Message: 
+
+-------------------------------------------------------------------
+2015-03-13 12:04:42.752 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-3.3.2.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml  --logLevel=debug --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 12:04:48.625 | Update resulted with exit code 0. Message: 
+DEBUG 3/13/15 12:04 PM: liquibase: Connected to sa@jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test
+DEBUG 3/13/15 12:04 PM: liquibase: Setting auto commit to false from true
+DEBUG 3/13/15 12:04 PM: liquibase: Executing QUERY database command: select schema_name()
+DEBUG 3/13/15 12:04 PM: liquibase: Computed checksum for 1426244683689 as 7d0c079d7cde0fe57a857488846c6693
+DEBUG 3/13/15 12:04 PM: liquibase: Executing QUERY database command: SELECT CONVERT(varchar(100), SERVERPROPERTY('COLLATION'))
+DEBUG 3/13/15 12:04 PM: liquibase: Executing QUERY database command: select count(*) from [dbo].[DATABASECHANGELOGLOCK]
+DEBUG 3/13/15 12:04 PM: liquibase: Executing QUERY database command: SELECT [LOCKED] FROM [dbo].[DATABASECHANGELOGLOCK] WHERE [ID]=1
+DEBUG 3/13/15 12:04 PM: liquibase: Lock Database
+DEBUG 3/13/15 12:04 PM: liquibase: Executing UPDATE database command: UPDATE [dbo].[DATABASECHANGELOGLOCK] SET [LOCKED] = 1, [LOCKEDBY] = 'NB367 (10.1.2.185)', [LOCKGRANTED] = '2015-03-13T12:04:43.812' WHERE [ID] = 1 AND [LOCKED] = 0
+INFO 3/13/15 12:04 PM: liquibase: Successfully acquired change log lock
+DEBUG 3/13/15 12:04 PM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 12:04 PM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 12:04 PM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 12:04 PM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 12:04 PM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 12:04 PM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 12:04 PM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 12:04 PM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 12:04 PM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 12:04 PM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 12:04 PM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'
+DEBUG 3/13/15 12:04 PM: liquibase: Found namespace details class liquibase.parser.core.xml.StandardNamespaceDetails for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Local path for http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd is liquibase/parser/core/xml/dbchangelog-2.0.xsd
+DEBUG 3/13/15 12:04 PM: liquibase: Successfully loaded XSD from liquibase/parser/core/xml/dbchangelog-2-------------------------------------------------------------------
+2015-03-13 12:04:59.586 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml  --logLevel=debug --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 12:05:12.955 | Update resulted with exit code 0. Message: 
+DEBUG 3/13/15 12:05 PM:liquibase: Unable to load/access Apache Derby driver class to check version
+DEBUG 3/13/15 12:05 PM:liquibase: Connected to sa@jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test
+DEBUG 3/13/15 12:05 PM:liquibase: Executing QUERY database command: SELECT [LOCKED] FROM [dbo].[DATABASECHANGELOGLOCK] WHERE [ID]=1
+DEBUG 3/13/15 12:05 PM:liquibase: Lock Database
+DEBUG 3/13/15 12:05 PM:liquibase: Executing UPDATE database command: UPDATE [dbo].[DATABASECHANGELOGLOCK] SET [LOCKED] = 1, [LOCKEDBY] = 'NB367 (10.1.2.185)', [LOCKGRANTED] = '2015-03-13T12:05:00.885' WHERE [ID] = 1 AND [LOCKED] = 0
+INFO 3/13/15 12:05 PM:liquibase: Successfully acquired change log lock
+DEBUG 3/13/15 12:05 PM:liquibase: Executing QUERY database command: SELECT MD5SUM FROM [dbo].[DATABASECHANGELOG] WHERE MD5SUM IS NOT NULL
+DEBUG 3/13/15 12:05 PM:liquibase: DatabaseChangeLog checksums are an incompatible version.  Setting them to null so they will be updated on next database update
+DEBUG 3/13/15 12:05 PM:liquibase: Executing EXECUTE database command: UPDATE [dbo].[DATABASECHANGELOG] SET MD5SUM=null
+INFO 3/13/15 12:05 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+DEBUG 3/13/15 12:05 PM:liquibase: Executing QUERY database command: SELECT FILENAME,AUTHOR,ID,MD5SUM,DATEEXECUTED,ORDEREXECUTED,TAG,EXECTYPE FROM [dbo].[DATABASECHANGELOG] ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for createTable:[
+    columns=[
+        column:[
+            autoIncrement="true"
+            constraints:[
+                nullable="false"
+                primaryKey="true"
+                primaryKeyName="PK_MONEY_ACCOUNT"
+            ]
+            name="ID"
+            type="BIGINT"
+        ],
+        column:[
+            constraints:[
+                nullable="false"
+            ]
+            name="NAME"
+            type="VARCHAR(255)"
+        ],
+        column:[
+            constraints:[
+                nullable="false"
+            ]
+            name="STATE"
+            type="VARCHAR(10)"
+        ],
+        column:[
+            constraints:[
+                nullable="false"
+            ]
+            name="BALANCE"
+            type="DECIMAL(20,6)"
+        ],
+        column:[
+            defaultValueNumeric="-1"
+            name="DELETED"
+            type="BIGINT"
+        ],
+        column:[
+            name="MINIMUM_BALANCE"
+            type="DECIMAL(20,6)"
+        ],
+        column:[
+            name="THIRD_PARTY_ID"
+            type="VARCHAR(255)"
+        ]
+    ]
+    tableName="MONEY_ACCOUNT"
+] as 4df505e274d1cb3fc9f809612b232f6c
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for addUniqueConstraint:[
+    columnNames="NAME,DELETED"
+    constraintName="UQ_MONEY_ACCOUNT_NOT_REM_NAME"
+    tableName="MONEY_ACCOUNT"
+] as 799292e89cca9212295bc5d055c24da2
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for createTable:[
+    columns=[
+        column:[
+            autoIncrement="true"
+            constraints:[
+                nullable="false"
+                primaryKey="true"
+                primaryKeyName="PK_CUSTOMER"
+            ]
+            name="ID"
+            type="BIGINT"
+        ],
+        column:[
+            constraints:[
+                nullable="false"
+            ]
+            name="EXTERNAL_ID"
+            type="VARCHAR(255)"
+        ],
+        column:[
+            constraints:[
+                nullable="false"
+            ]
+            name="NAME"
+            type="VARCHAR(255)"
+        ],
+        column:[
+            constraints:[
+                nullable="false"
+            ]
+            name="LOOKUP_KEY"
+            type="VARCHAR(255)"
+        ],
+        column:[
+            defaultValueNumeric="-1"
+            name="DELETED"
+            type="BIGINT"
+        ],
+        column:[
+            constraints:[
+                foreignKeyName="FK_CUSTOMER_MONEY_ACCOUNT"
+                references="MONEY_ACCOUNT(ID)"
+            ]
+            name="DEFAULT_MONEY_ACCOUNT_ID"
+            type="BIGINT"
+        ]
+    ]
+    tableName="CUSTOMER"
+] as 8d5904cbc0dd8fba8dd464868a1405cd
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for createIndex:[
+    columns=[
+        column:[
+            name="EXTERNAL_ID"
+        ]
+    ]
+    indexName="IDX_CUSTOMER_EXTERNAL_ID"
+    tableName="CUSTOMER"
+] as a941e4ea9b892b236fda524e470785e4
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for createIndex:[
+    columns=[
+        column:[
+            name="LOOKUP_KEY"
+        ]
+    ]
+    indexName="IDX_CUSTOMER_LOOKUP_KEY"
+    tableName="CUSTOMER"
+] as 74e287e7936986a4bf49b77a421dc71e
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for addUniqueConstraint:[
+    columnNames="EXTERNAL_ID,DELETED"
+    constraintName="UQ_CUSTOMER_NOT_REM_EXT_ID"
+    tableName="CUSTOMER"
+] as 76de797466116116e9a0d913f92593e3
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for addUniqueConstraint:[
+    columnNames="LOOKUP_KEY,DELETED"
+    constraintName="UQ_CUSTOMER_NOT_REM_LOOK_KEY"
+    tableName="CUSTOMER"
+] as 135c626bac23e8e9bdadf37928f3d244
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for createTable:[
+    columns=[
+        column:[
+            constraints:[
+                foreignKeyName="FK_CUST_MONEY_ACCS_MONEY_ACC"
+                nullable="false"
+                references="MONEY_ACCOUNT(ID)"
+            ]
+            name="MONEY_ACCOUNT_ID"
+            type="BIGINT"
+        ],
+        column:[
+            constraints:[
+                foreignKeyName="FK_CUST_MONEY_ACCS_CUST"
+                nullable="false"
+                references="CUSTOMER(ID)"
+            ]
+            name="CUSTOMER_ID"
+            type="BIGINT"
+        ]
+    ]
+    tableName="CUSTOMER_MONEY_ACCOUNTS"
+] as a117fec15eec4ceb36c4e733afb746e8
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for addUniqueConstraint:[
+    columnNames="MONEY_ACCOUNT_ID,CUSTOMER_ID"
+    constraintName="UQ_CUSTOMER_MONEY_ACCOUNTS"
+    tableName="CUSTOMER_MONEY_ACCOUNTS"
+] as a530f0ddc14dcbc74eeb435dbe64ef53
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for createTable:[
+    columns=[
+        column:[
+            autoIncrement="true"
+            constraints:[
+                nullable="false"
+                primaryKey="true"
+                primaryKeyName="PK_API_USER"
+            ]
+            name="ID"
+            type="BIGINT"
+        ],
+        column:[
+            constraints:[
+                nullable="false"
+            ]
+            name="NAME"
+            type="VARCHAR(255)"
+        ],
+        column:[
+            constraints:[
+                nullable="false"
+            ]
+            name="PASSWORD"
+            type="VARCHAR(255)"
+        ],
+        column:[
+            constraints:[
+                nullable="false"
+            ]
+            name="STATE"
+            type="VARCHAR(10)"
+        ],
+        column:[
+            defaultValueNumeric="-1"
+            name="DELETED"
+            type="BIGINT"
+        ]
+    ]
+    tableName="API_USER"
+] as 309cdac6deae960c60f5fdab8af208ed
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for addUniqueConstraint:[
+    columnNames="NAME,DELETED"
+    constraintName="UQ_API_USER_NAME"
+    tableName="API_USER"
+] as a54dcd4786921416ee6987fea9def69c
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for createTable:[
+    columns=[
+        column:[
+            autoIncrement="true"
+            constraints:[
+                nullable="false"
+                primaryKey="true"
+                primaryKeyName="PK_API_USER_ROLE"
+            ]
+            name="ID"
+            type="BIGINT"
+        ],
+        column:[
+            constraints:[
+                nullable="false"
+            ]
+            name="ROLE"
+            type="VARCHAR(255)"
+        ]
+    ]
+    tableName="API_USER_ROLE"
+] as e27a37baa85cde2d4a16fc352ba3b67a
+DEBUG 3/13/15 12:05 PM:liquibase: Computed checksum for createTable:[
+    columns=[
+        column:[
+            constraints:[
+                foreignKeyName="FK_API_USER_ROLES_API_USER"
+                nullable="false"
+                references="API_USER(ID)"
+            ]
+            name="API_USER_ID"
+            ty-------------------------------------------------------------------
+2015-03-13 12:05:58.548 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 12:06:01.485 | Update resulted with exit code 0. Message: 
+INFO 3/13/15 12:05 PM:liquibase: Successfully acquired change log lock
+INFO 3/13/15 12:06 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/13/15 12:06 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/13/15 12:06 PM:liquibase: Successfully released change log lock
+Liquibase Update Successful
+
+-------------------------------------------------------------------
+2015-03-13 17:04:06.474 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 17:04:12.040 | Update resulted with exit code 0. Message: 
+INFO 3/13/15 5:04 PM:liquibase: Successfully acquired change log lock
+INFO 3/13/15 5:04 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/13/15 5:04 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/13/15 5:04 PM:liquibase: Successfully released change log lock
+Liquibase Update Successful
+
+-------------------------------------------------------------------
+2015-03-13 17:06:43.409 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-13 17:06:43.536 | Update resulted with exit code 2. Message: 
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.8', but '1.7' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+-------------------------------------------------------------------
+2015-03-18 17:54:27.000 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-18 17:54:30.047 | Update resulted with exit code 0. Message: 
+INFO 3/18/15 5:54 PM:liquibase: Successfully acquired change log lock
+INFO 3/18/15 5:54 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/18/15 5:54 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/18/15 5:54 PM:liquibase: Successfully released change log lock
+Liquibase Update Successful
+
+-------------------------------------------------------------------
+2015-03-18 18:04:02.823 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-18 18:04:06.950 | Update resulted with exit code 0. Message: 
+INFO 3/18/15 6:04 PM:liquibase: Successfully acquired change log lock
+INFO 3/18/15 6:04 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/18/15 6:04 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/18/15 6:04 PM:liquibase: Successfully released change log lock
+Liquibase Update Successful
+
+-------------------------------------------------------------------
+2015-03-18 18:05:02.759 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-18 18:05:04.585 | Update resulted with exit code 0. Message: 
+INFO 3/18/15 6:05 PM:liquibase: Successfully acquired change log lock
+INFO 3/18/15 6:05 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/18/15 6:05 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/18/15 6:05 PM:liquibase: Successfully released change log lock
+Liquibase Update Successful
+
+-------------------------------------------------------------------
+2015-03-18 18:05:24.664 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-18 18:05:26.591 | Update resulted with exit code 0. Message: 
+INFO 3/18/15 6:05 PM:liquibase: Successfully acquired change log lock
+INFO 3/18/15 6:05 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/18/15 6:05 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/18/15 6:05 PM:liquibase: Successfully released change log lock
+Liquibase Update Successful
+
+-------------------------------------------------------------------
+2015-03-18 18:06:28.709 | java -jar C:\Users\erneker\Documents\libs\liquibase-core-2.0.5.jar --classpath="C:\Users\erneker\Documents\Projects\jtds-1.2.8-src\classes\artifacts\jtds_jar2\jtds.jar;C:\Users\erneker\Documents\libs\database-changelog-1.15.5.jar" --changeLogFile=changelog.xml --username=sa --url=jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test --driver=net.sourceforge.jtds.jdbc.Driver --password=sa update
+2015-03-18 18:06:30.735 | Update resulted with exit code 0. Message: 
+INFO 3/18/15 6:06 PM:liquibase: Successfully acquired change log lock
+INFO 3/18/15 6:06 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/18/15 6:06 PM:liquibase: Reading from [dbo].[DATABASECHANGELOG]
+INFO 3/18/15 6:06 PM:liquibase: Successfully released change log lock
+Liquibase Update Successful
+
+-------------------------------------------------------------------
+2015-03-18 18:18:55.053 | Supported: 1
+2015-03-18 18:18:55.056 | Server: 0
+2015-03-18 18:18:55.060 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-18 18:30:33.465 | Supported: 1
+2015-03-18 18:30:33.469 | Server: 0
+2015-03-18 18:30:33.475 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-18 18:34:25.628 | Supported: 1
+2015-03-18 18:34:25.633 | Server: 0
+2015-03-18 18:34:25.638 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-19 09:29:01.963 | Supported: 0
+2015-03-19 09:29:01.967 | Server: 0
+2015-03-19 09:29:01.972 | String: Windows ???
+-------------------------------------------------------------------
+2015-03-19 10:13:02.743 | Supported: 1
+2015-03-19 10:13:02.746 | Server: 0
+2015-03-19 10:13:02.749 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-19 12:08:23.732 | Supported: 1
+2015-03-19 12:08:23.741 | Server: 0
+2015-03-19 12:08:23.746 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-19 12:36:56.223 | Supported: 1
+2015-03-19 12:36:56.227 | Server: 0
+2015-03-19 12:36:56.231 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-19 13:54:37.922 | Supported: 1
+2015-03-19 13:54:37.928 | Server: 0
+2015-03-19 13:54:37.932 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-19 13:56:31.578 | Supported: 1
+2015-03-19 13:56:31.582 | Server: 0
+2015-03-19 13:56:31.588 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-19 13:57:20.604 | Supported: 1
+2015-03-19 13:57:20.612 | Server: 0
+2015-03-19 13:57:20.614 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-19 14:56:23.526 | Supported: 1
+2015-03-19 14:56:23.531 | Server: 0
+2015-03-19 14:56:23.537 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-19 14:58:24.795 | Supported: 1
+2015-03-19 14:58:24.805 | Server: 0
+2015-03-19 14:58:24.808 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-19 15:59:46.187 | Supported: 1
+2015-03-19 15:59:46.194 | Server: 0
+2015-03-19 15:59:46.200 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-20 09:28:57.447 | Supported: 1
+2015-03-20 09:28:57.452 | Server: 0
+2015-03-20 09:28:57.457 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-20 09:53:48.695 | Supported: 1
+2015-03-20 09:53:48.702 | Server: 0
+2015-03-20 09:53:48.705 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-20 10:23:57.455 | Supported: 1
+2015-03-20 10:23:57.460 | Server: 0
+2015-03-20 10:23:57.465 | String: Windows 8
+-------------------------------------------------------------------
+2015-03-20 13:55:26.189 | Supported: 1
+2015-03-20 13:55:26.199 | Server: 0
+2015-03-20 13:55:26.203 | String: Windows 8

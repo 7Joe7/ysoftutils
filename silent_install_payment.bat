@@ -1,0 +1,1 @@
+PaymentSystemInstaller.exe /S /CFG:dbClass=MSSQL /CFG:dbHost=10.0.11.172 /CFG:dbUsername=sa /CFG:dbName=joe-test /CFG:dbPassword=sa /CFG:dbPort=1433 /CFG:enableSSL=False /CFG:userManagement=localhost /CFG:noStartSvcs /D="C:\Program Files (x86)\YSoft Payment System"

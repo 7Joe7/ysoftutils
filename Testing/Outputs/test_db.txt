@@ -1,0 +1,134 @@
+Testing with:
+Java:             Java 1.8 32bit,
+MS_SQL driver:    JTDS 1.2.8 patched driver,
+DB API driver:    Standard dbapi driver
+-----------------------------------------------------------------------
+pid 8040 exit 0
+-----------------------------------------------------------------------
+1426235557169: type 'MSSQL'
+1426235557169: ip '10.0.11.172'
+1426235557169: user 'sa'
+1426235557169: password '*******'
+1426235557169: port '1433'
+1426235557169: ssl 'true'
+1426235557169: database 'joe-test'
+1426235557169: action 'TEST_DB'
+1426235557169: sql file or command: 
+1426235557202: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/;appName=SafeQ;ssl=request
+1426235557775: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test;appName=SafeQ;ssl=request
+Error code: 0
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+Testing with:
+Java:             Java 1.7 32bit,
+MS_SQL driver:    JTDS 1.2.8 patched driver,
+DB API driver:    Standard dbapi driver
+-----------------------------------------------------------------------
+pid 9808 exit 0
+-----------------------------------------------------------------------
+1426235558048: type 'MSSQL'
+1426235558048: ip '10.0.11.172'
+1426235558048: user 'sa'
+1426235558048: password '*******'
+1426235558048: port '1433'
+1426235558048: ssl 'true'
+1426235558048: database 'joe-test'
+1426235558048: action 'TEST_DB'
+1426235558048: sql file or command: 
+1426235558084: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/;appName=SafeQ;ssl=request
+1426235558940: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test;appName=SafeQ;ssl=request
+Error code: 0
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+Testing with:
+Java:             Java 1.6 32bit,
+MS_SQL driver:    JTDS 1.2.8 patched driver,
+DB API driver:    Standard dbapi driver
+-----------------------------------------------------------------------
+pid 10044 exit 0
+-----------------------------------------------------------------------
+1426235559300: type 'MSSQL'
+1426235559301: ip '10.0.11.172'
+1426235559301: user 'sa'
+1426235559301: password '*******'
+1426235559301: port '1433'
+1426235559301: ssl 'true'
+1426235559301: database 'joe-test'
+1426235559301: action 'TEST_DB'
+1426235559301: sql file or command: 
+1426235559320: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/;appName=SafeQ;ssl=request
+1426235559804: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test;appName=SafeQ;ssl=request
+Error code: 0
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+Testing with:
+Java:             Java 1.8 64bit,
+MS_SQL driver:    JTDS 1.2.8 patched driver,
+DB API driver:    Standard dbapi driver
+-----------------------------------------------------------------------
+pid 9152 exit 0
+-----------------------------------------------------------------------
+1426235560189: type 'MSSQL'
+1426235560190: ip '10.0.11.172'
+1426235560190: user 'sa'
+1426235560190: password '*******'
+1426235560190: port '1433'
+1426235560190: ssl 'true'
+1426235560190: database 'joe-test'
+1426235560190: action 'TEST_DB'
+1426235560190: sql file or command: 
+1426235560224: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/;appName=SafeQ;ssl=request
+1426235560888: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test;appName=SafeQ;ssl=request
+Error code: 0
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+Testing with:
+Java:             Java 1.7 64bit,
+MS_SQL driver:    JTDS 1.2.8 patched driver,
+DB API driver:    Standard dbapi driver
+-----------------------------------------------------------------------
+pid 7564 exit 0
+-----------------------------------------------------------------------
+1426235561235: type 'MSSQL'
+1426235561235: ip '10.0.11.172'
+1426235561236: user 'sa'
+1426235561236: password '*******'
+1426235561236: port '1433'
+1426235561236: ssl 'true'
+1426235561236: database 'joe-test'
+1426235561236: action 'TEST_DB'
+1426235561236: sql file or command: 
+1426235561282: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/;appName=SafeQ;ssl=request
+1426235561932: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test;appName=SafeQ;ssl=request
+Error code: 0
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+Testing with:
+Java:             Java 1.6 64bit,
+MS_SQL driver:    JTDS 1.2.8 patched driver,
+DB API driver:    Standard dbapi driver
+-----------------------------------------------------------------------
+pid 8604 exit 0
+-----------------------------------------------------------------------
+1426235562233: type 'MSSQL'
+1426235562233: ip '10.0.11.172'
+1426235562233: user 'sa'
+1426235562233: password '*******'
+1426235562233: port '1433'
+1426235562233: ssl 'true'
+1426235562233: database 'joe-test'
+1426235562233: action 'TEST_DB'
+1426235562233: sql file or command: 
+1426235562266: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/;appName=SafeQ;ssl=request
+1426235562793: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test;appName=SafeQ;ssl=request
+Error code: 0
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
