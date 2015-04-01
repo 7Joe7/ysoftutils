@@ -33,7 +33,7 @@ task buildInstallExe(type: Exec) {
 }
 
 
-// ---------------------------- Testing ----------------------------------------
+// ================================================= Testing ========================================================
 
 task startInstallation(type: Exec) {
     description = "Start the built installer.exe"
@@ -50,4 +50,4 @@ task testInstallation(type: Exec) {
 startInstallation.dependsOn buildInstallExe
 testInstallation.dependsOn buildInstallExe
 
-// ---------------------------- Testing ----------------------------------------
+// ================================================= Testing ========================================================
