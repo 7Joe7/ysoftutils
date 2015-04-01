@@ -1,0 +1,1 @@
+mt.exe -manifest man2.manifest -updateresource:Installer.exe;1

@@ -4,6 +4,5 @@
 
 Section
     ${setup}
-
     Call Test
 SectionEnd

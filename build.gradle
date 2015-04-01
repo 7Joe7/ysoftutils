@@ -11,7 +11,7 @@ configurations {
 }
 
 dependencies {
-    installerInfrastructure group: 'com.cratchpaper.nsis', name: 'unsis', version: '2.46.5.4-YSOFT', ext: 'zip'
+    installerInfrastructure group: 'com.cratchpaper.nsis', name: 'unsis', version: '2.46.5.5-YSOFT', ext: 'zip'
 }
 
 task extractNsis(type: Copy) {
@@ -35,19 +35,19 @@ task buildInstallExe(type: Exec) {
 
 // ---------------------------- Testing ----------------------------------------
 
-task startInstall(type: Exec) {
+task startInstallation(type: Exec) {
     description = "Start the built installer.exe"
     workingDir = "./nsis_src/results"
     commandLine 'cmd', '/c', 'installer.exe'
 }
 
-task testInstall(type: Exec) {
+task testInstallation(type: Exec) {
     description = "Start the built installer.exe"
     workingDir = "./nsis_src/results"
     commandLine 'cmd', '/c', 'installer.exe /S'
 }
 
-startInstall.dependsOn buildInstallExe
-testInstall.dependsOn buildInstallExe
+startInstallation.dependsOn buildInstallExe
+testInstallation.dependsOn buildInstallExe
 
 // ---------------------------- Testing ----------------------------------------

@@ -162,3 +162,12 @@ FunctionEnd
     FileClose $logFileHandle
 !macroend
 !define setup `!insertmacro setup`
+
+!macro TEST_CONDITION CONDITION
+    ${If} ${${CONDITION}}
+        ${log} "${CONDITION} True"
+    ${Else}
+        ${log} "${CONDITION} False"
+    ${EndIf}
+!macroend
+!define TEST_CONDITION `!insertmacro TEST_CONDITION`
