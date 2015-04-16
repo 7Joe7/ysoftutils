@@ -1,0 +1,2 @@
+"C:\SafeQ5\java\bin\java.exe" -jar -server C:\Users\erneker\Documents\Projects\payment-installer\build\preinstall\liquibase-core.jar --classpath="C:\Users\erneker\Documents\Projects\payment-installer\build\preinstall\jtds.jar;C:\Users\erneker\Documents\Projects\payment-installer\build\preinstall\database-changelog.jar" --changeLogFile=changelog.xml --username=sync --url=jdbc:jtds:sqlserver://10.0.11.172/joe-test;instance=Instance1 --driver=net.sourceforge.jtds.jdbc.Driver --password=sync update
+pause

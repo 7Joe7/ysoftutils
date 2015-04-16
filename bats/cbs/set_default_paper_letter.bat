@@ -1,0 +1,1 @@
+rundll32 printui.dll PrintUIEntry /q /Sr /n "SafeQ" /a "config-letter.dat" g d u p r

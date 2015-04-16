@@ -1,134 +1,155 @@
 Testing with:
 Java:             Java 1.8 32bit,
-MS_SQL driver:    JTDS 1.2.8 patched driver,
-DB API driver:    Standard dbapi driver
+MS_SQL driver:    SQL JDBC 4 driver,
+DB API driver:    dbapi patched driver
 -----------------------------------------------------------------------
-pid 8040 exit 0
+Command: C:\Progra~2\Java\jre1.8.0_40\bin\java.exe  -cp "C:\Users\erneker\Documents\libs\dbtools.jar;C:\Users\erneker\Documents\libs\sqljdbc4.jar;C:\Users\erneker\Documents\libs\postgresql.jar;C:\Users\erneker\Documents\Projects\dbapi\classes\artifacts\dbapi_jar\dbapi.jar" com.ysoft.db.dbapi.DBBuilder type=MSSQL ip=10.0.11.172 user=sa "pass=sa" port=1433 ssl=true database=joe-test action=TEST_DB ""
 -----------------------------------------------------------------------
-1426235557169: type 'MSSQL'
-1426235557169: ip '10.0.11.172'
-1426235557169: user 'sa'
-1426235557169: password '*******'
-1426235557169: port '1433'
-1426235557169: ssl 'true'
-1426235557169: database 'joe-test'
-1426235557169: action 'TEST_DB'
-1426235557169: sql file or command: 
-1426235557202: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/;appName=SafeQ;ssl=request
-1426235557775: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test;appName=SafeQ;ssl=request
+Success: pid 9088 exit 0
+-----------------------------------------------------------------------
+StdOut:
+1428481278537: type 'MSSQL'
+1428481278538: ip '10.0.11.172'
+1428481278538: user 'sa'
+1428481278538: password '*******'
+1428481278538: port '1433'
+1428481278538: ssl 'true'
+1428481278538: database 'joe-test'
+1428481278538: action 'TEST_DB'
+1428481278538: sql file or command: 
+1428481278794: DB: Connecting to jdbc:sqlserver://10.0.11.172:1433;appName=SafeQ;ssl=request
+1428481279540: DB: Connecting to jdbc:sqlserver://10.0.11.172:1433;databaseName=joe-test;appName=SafeQ;ssl=request
 Error code: 0
------------------------------------------------------------------------
-
 -----------------------------------------------------------------------
 Testing with:
 Java:             Java 1.7 32bit,
-MS_SQL driver:    JTDS 1.2.8 patched driver,
-DB API driver:    Standard dbapi driver
+MS_SQL driver:    SQL JDBC 4 driver,
+DB API driver:    dbapi patched driver
 -----------------------------------------------------------------------
-pid 9808 exit 0
+Command: C:\Progra~2\Java\jre7\bin\java.exe  -cp "C:\Users\erneker\Documents\libs\dbtools.jar;C:\Users\erneker\Documents\libs\sqljdbc4.jar;C:\Users\erneker\Documents\libs\postgresql.jar;C:\Users\erneker\Documents\Projects\dbapi\classes\artifacts\dbapi_jar\dbapi.jar" com.ysoft.db.dbapi.DBBuilder type=MSSQL ip=10.0.11.172 user=sa "pass=sa" port=1433 ssl=true database=joe-test action=TEST_DB ""
 -----------------------------------------------------------------------
-1426235558048: type 'MSSQL'
-1426235558048: ip '10.0.11.172'
-1426235558048: user 'sa'
-1426235558048: password '*******'
-1426235558048: port '1433'
-1426235558048: ssl 'true'
-1426235558048: database 'joe-test'
-1426235558048: action 'TEST_DB'
-1426235558048: sql file or command: 
-1426235558084: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/;appName=SafeQ;ssl=request
-1426235558940: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test;appName=SafeQ;ssl=request
+Success: pid 9128 exit 0
+-----------------------------------------------------------------------
+StdOut:
+1428481279918: type 'MSSQL'
+1428481279919: ip '10.0.11.172'
+1428481279919: user 'sa'
+1428481279919: password '*******'
+1428481279919: port '1433'
+1428481279919: ssl 'true'
+1428481279919: database 'joe-test'
+1428481279919: action 'TEST_DB'
+1428481279920: sql file or command: 
+1428481280144: DB: Connecting to jdbc:sqlserver://10.0.11.172:1433;appName=SafeQ;ssl=request
+1428481280591: DB: Connecting to jdbc:sqlserver://10.0.11.172:1433;databaseName=joe-test;appName=SafeQ;ssl=request
 Error code: 0
------------------------------------------------------------------------
-
 -----------------------------------------------------------------------
 Testing with:
 Java:             Java 1.6 32bit,
-MS_SQL driver:    JTDS 1.2.8 patched driver,
-DB API driver:    Standard dbapi driver
+MS_SQL driver:    SQL JDBC 4 driver,
+DB API driver:    dbapi patched driver
 -----------------------------------------------------------------------
-pid 10044 exit 0
+Command: C:\Progra~2\Java\jre6\bin\java.exe  -cp "C:\Users\erneker\Documents\libs\dbtools.jar;C:\Users\erneker\Documents\libs\sqljdbc4.jar;C:\Users\erneker\Documents\libs\postgresql.jar;C:\Users\erneker\Documents\Projects\dbapi\classes\artifacts\dbapi_jar\dbapi.jar" com.ysoft.db.dbapi.DBBuilder type=MSSQL ip=10.0.11.172 user=sa "pass=sa" port=1433 ssl=true database=joe-test action=TEST_DB ""
 -----------------------------------------------------------------------
-1426235559300: type 'MSSQL'
-1426235559301: ip '10.0.11.172'
-1426235559301: user 'sa'
-1426235559301: password '*******'
-1426235559301: port '1433'
-1426235559301: ssl 'true'
-1426235559301: database 'joe-test'
-1426235559301: action 'TEST_DB'
-1426235559301: sql file or command: 
-1426235559320: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/;appName=SafeQ;ssl=request
-1426235559804: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test;appName=SafeQ;ssl=request
+Success: pid 7680 exit 0
+-----------------------------------------------------------------------
+StdOut:
+1428481280884: type 'MSSQL'
+1428481280884: ip '10.0.11.172'
+1428481280884: user 'sa'
+1428481280884: password '*******'
+1428481280884: port '1433'
+1428481280884: ssl 'true'
+1428481280884: database 'joe-test'
+1428481280884: action 'TEST_DB'
+1428481280884: sql file or command: 
+1428481281099: DB: Connecting to jdbc:sqlserver://10.0.11.172:1433;appName=SafeQ;ssl=request
+1428481281487: DB: Connecting to jdbc:sqlserver://10.0.11.172:1433;databaseName=joe-test;appName=SafeQ;ssl=request
 Error code: 0
------------------------------------------------------------------------
-
 -----------------------------------------------------------------------
 Testing with:
 Java:             Java 1.8 64bit,
-MS_SQL driver:    JTDS 1.2.8 patched driver,
-DB API driver:    Standard dbapi driver
+MS_SQL driver:    SQL JDBC 4 driver,
+DB API driver:    dbapi patched driver
 -----------------------------------------------------------------------
-pid 9152 exit 0
+Command: C:\Progra~1\Java\jre1.8.0_40\bin\java.exe -server -cp "C:\Users\erneker\Documents\libs\dbtools.jar;C:\Users\erneker\Documents\libs\sqljdbc4.jar;C:\Users\erneker\Documents\libs\postgresql.jar;C:\Users\erneker\Documents\Projects\dbapi\classes\artifacts\dbapi_jar\dbapi.jar" com.ysoft.db.dbapi.DBBuilder type=MSSQL ip=10.0.11.172 user=sa "pass=sa" port=1433 ssl=true database=joe-test action=TEST_DB ""
 -----------------------------------------------------------------------
-1426235560189: type 'MSSQL'
-1426235560190: ip '10.0.11.172'
-1426235560190: user 'sa'
-1426235560190: password '*******'
-1426235560190: port '1433'
-1426235560190: ssl 'true'
-1426235560190: database 'joe-test'
-1426235560190: action 'TEST_DB'
-1426235560190: sql file or command: 
-1426235560224: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/;appName=SafeQ;ssl=request
-1426235560888: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test;appName=SafeQ;ssl=request
+Success: pid 32 exit 0
+-----------------------------------------------------------------------
+StdOut:
+1428481281808: type 'MSSQL'
+1428481281808: ip '10.0.11.172'
+1428481281808: user 'sa'
+1428481281808: password '*******'
+1428481281808: port '1433'
+1428481281808: ssl 'true'
+1428481281808: database 'joe-test'
+1428481281808: action 'TEST_DB'
+1428481281808: sql file or command: 
+1428481282007: DB: Connecting to jdbc:sqlserver://10.0.11.172:1433;appName=SafeQ;ssl=request
+1428481282513: DB: Connecting to jdbc:sqlserver://10.0.11.172:1433;databaseName=joe-test;appName=SafeQ;ssl=request
 Error code: 0
------------------------------------------------------------------------
-
 -----------------------------------------------------------------------
 Testing with:
 Java:             Java 1.7 64bit,
-MS_SQL driver:    JTDS 1.2.8 patched driver,
-DB API driver:    Standard dbapi driver
+MS_SQL driver:    SQL JDBC 4 driver,
+DB API driver:    dbapi patched driver
 -----------------------------------------------------------------------
-pid 7564 exit 0
+Command: C:\Progra~1\Java\jre7\bin\java.exe -server -cp "C:\Users\erneker\Documents\libs\dbtools.jar;C:\Users\erneker\Documents\libs\sqljdbc4.jar;C:\Users\erneker\Documents\libs\postgresql.jar;C:\Users\erneker\Documents\Projects\dbapi\classes\artifacts\dbapi_jar\dbapi.jar" com.ysoft.db.dbapi.DBBuilder type=MSSQL ip=10.0.11.172 user=sa "pass=sa" port=1433 ssl=true database=joe-test action=TEST_DB ""
 -----------------------------------------------------------------------
-1426235561235: type 'MSSQL'
-1426235561235: ip '10.0.11.172'
-1426235561236: user 'sa'
-1426235561236: password '*******'
-1426235561236: port '1433'
-1426235561236: ssl 'true'
-1426235561236: database 'joe-test'
-1426235561236: action 'TEST_DB'
-1426235561236: sql file or command: 
-1426235561282: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/;appName=SafeQ;ssl=request
-1426235561932: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test;appName=SafeQ;ssl=request
+Success: pid 6996 exit 0
+-----------------------------------------------------------------------
+StdOut:
+1428481282855: type 'MSSQL'
+1428481282856: ip '10.0.11.172'
+1428481282856: user 'sa'
+1428481282856: password '*******'
+1428481282856: port '1433'
+1428481282856: ssl 'true'
+1428481282856: database 'joe-test'
+1428481282856: action 'TEST_DB'
+1428481282856: sql file or command: 
+1428481283120: DB: Connecting to jdbc:sqlserver://10.0.11.172:1433;appName=SafeQ;ssl=request
+1428481283644: DB: Connecting to jdbc:sqlserver://10.0.11.172:1433;databaseName=joe-test;appName=SafeQ;ssl=request
 Error code: 0
------------------------------------------------------------------------
-
 -----------------------------------------------------------------------
 Testing with:
 Java:             Java 1.6 64bit,
-MS_SQL driver:    JTDS 1.2.8 patched driver,
-DB API driver:    Standard dbapi driver
+MS_SQL driver:    SQL JDBC 4 driver,
+DB API driver:    dbapi patched driver
 -----------------------------------------------------------------------
-pid 8604 exit 0
+Command: C:\Progra~1\Java\jre6\bin\java.exe -server -cp "C:\Users\erneker\Documents\libs\dbtools.jar;C:\Users\erneker\Documents\libs\sqljdbc4.jar;C:\Users\erneker\Documents\libs\postgresql.jar;C:\Users\erneker\Documents\Projects\dbapi\classes\artifacts\dbapi_jar\dbapi.jar" com.ysoft.db.dbapi.DBBuilder type=MSSQL ip=10.0.11.172 user=sa "pass=sa" port=1433 ssl=true database=joe-test action=TEST_DB ""
 -----------------------------------------------------------------------
-1426235562233: type 'MSSQL'
-1426235562233: ip '10.0.11.172'
-1426235562233: user 'sa'
-1426235562233: password '*******'
-1426235562233: port '1433'
-1426235562233: ssl 'true'
-1426235562233: database 'joe-test'
-1426235562233: action 'TEST_DB'
-1426235562233: sql file or command: 
-1426235562266: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/;appName=SafeQ;ssl=request
-1426235562793: DB: Connecting to jdbc:jtds:sqlserver://10.0.11.172:1433/joe-test;appName=SafeQ;ssl=request
+Success: pid 5812 exit 0
+-----------------------------------------------------------------------
+StdOut:
+1428481283995: type 'MSSQL'
+1428481283995: ip '10.0.11.172'
+1428481283995: user 'sa'
+1428481283995: password '*******'
+1428481283995: port '1433'
+1428481283995: ssl 'true'
+1428481283995: database 'joe-test'
+1428481283995: action 'TEST_DB'
+1428481283995: sql file or command: 
+1428481284238: DB: Connecting to jdbc:sqlserver://10.0.11.172:1433;appName=SafeQ;ssl=request
+1428481284627: DB: Connecting to jdbc:sqlserver://10.0.11.172:1433;databaseName=joe-test;appName=SafeQ;ssl=request
 Error code: 0
 -----------------------------------------------------------------------
-
+Testing with:
+Java:             Environment Java,
+MS_SQL driver:    SQL JDBC 4 driver,
+DB API driver:    dbapi patched driver
+-----------------------------------------------------------------------
+Command: java -server -cp "C:\Users\erneker\Documents\libs\dbtools.jar;C:\Users\erneker\Documents\libs\sqljdbc4.jar;C:\Users\erneker\Documents\libs\postgresql.jar;C:\Users\erneker\Documents\Projects\dbapi\classes\artifacts\dbapi_jar\dbapi.jar" com.ysoft.db.dbapi.DBBuilder type=MSSQL ip=10.0.11.172 user=sa "pass=sa" port=1433 ssl=true database=joe-test action=TEST_DB ""
+-----------------------------------------------------------------------
+Success: pid 9080 exit 2
+-----------------------------------------------------------------------
+StdErr:
+Error: Registry key 'Software\JavaSoft\Java Runtime Environment'\CurrentVersion'
+has value '1.7', but '1.8' is required.
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
 -----------------------------------------------------------------------
 
 -----------------------------------------------------------------------

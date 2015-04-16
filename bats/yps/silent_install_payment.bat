@@ -1,0 +1,1 @@
+payment-system-installer-5.0-20150407.000146-314.exe /S /CFG:dbClass=MSSQL /CFG:dbHost=10.0.11.172 /CFG:dbUsername=sa /CFG:dbName=joe-test-instance2 /CFG:dbPassword=sa /CFG:dbPort=1433 /CFG:enableSSL=true /CFG:userManagement=10.0.11.13 /D="C:\Program Files (x86)\YSoft Payment System"

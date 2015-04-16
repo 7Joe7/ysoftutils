@@ -16,8 +16,10 @@ JAVA = [
 
 DBAPI = {
     s: {path: 'C:\Users\erneker\Documents\libs\dbapi.jar', msg: 'Standard dbapi driver'},
-    p: {path: 'C:\Users\erneker\Documents\Projects\dbapi\classes\artifacts\dbapi_jar', msg: 'dbapi patched driver'}
+    p: {path: 'C:\Users\erneker\Documents\Projects\dbapi\classes\artifacts\dbapi_jar\dbapi.jar', msg: 'dbapi patched driver'}
 }
+
+yps_inst_dir = 'C:\Program Files (x86)\YSoft Payment System'
 
 PARS = {
     db_tools: {path: 'C:\Users\erneker\Documents\libs\dbtools.jar', msg: 'DB_TOOLS'},
@@ -25,9 +27,9 @@ PARS = {
     liquibase_jar: {path: 'C:\Users\erneker\AppData\Local\Temp\liquibase-core.jar', msg: 'Liquibase 3.3.2'},
     database_changelog: {path: 'C:\Users\erneker\AppData\Local\Temp\database-changelog.jar', msg: 'Database-changelog'},
     yps_inst_dir: {path: 'C:\Program Files (x86)\YSoft Payment System'},
-    tomcat: {path: "#{PARS[:yps_inst_dir]}\bin\tomcat7.exe"},
+    tomcat: {path: "#{yps_inst_dir}\bin\tomcat7.exe"},
     payment_svc: {name: 'YSoftPaymentSystem', display: 'YSoft Payment System', description: 'YSoft Payment service'},
-    bootstrap: {path: "#{PARS[:yps_inst_dir]}\bin\bootstrap.jar"}
+    bootstrap: {path: "#{yps_inst_dir}\bin\bootstrap.jar"}
 }
 
 MS_SQL = {
@@ -40,7 +42,9 @@ MS_SQL = {
     jtds131p: {path: 'C:\Users\erneker\Documents\Projects\jtds-1.3.1-src\out\artifacts\jtds_1_3_1_src_jar3\jtds-1.3.1-src.jar', msg: 'JTDS 1.3.1 patched driver'},
     jtds128: {path: 'C:\Users\erneker\Documents\libs\jtds-1.2.8.jar', msg: 'JTDS 1.2.8 driver'},
     jtds131: {path: 'C:\Users\erneker\Documents\libs\jtds-1.3.1.jar', msg: 'JTDS 1.3.1 driver'},
-    sql4p: {path: 'C:\Users\erneker\Documents\libs\sqljdbc4.jar', msg: 'SQL JDBC 4 driver'}
+    sql4p: {path: 'C:\Users\erneker\Documents\libs\sqljdbc4.jar', msg: 'SQL JDBC 4 driver'},
+    sql41p: {path: 'C:\Users\erneker\Documents\libs\sqljdbc41.jar', msg: 'SQL JDBC 4.1 driver'},
+    sqlp: {path: 'C:\Users\erneker\Documents\libs\sqljdbc.jar', msg: 'SQL JDBC driver'}
 }
 
 COMMANDS = {
@@ -119,10 +123,15 @@ Java:             #{java[:msg]}"
   end
 end
 
-def install_tomcat
-  COMMANDS[:install_tomcat][:command]
+def install_tomcat(output_file_name)
+  $stdout.reopen("#{OUTPUT_FOLDER}#{output_file_name}.txt", 'w')
+
+  command = COMMANDS[:install_tomcat][:command]
+  puts command
+  stdout, stderr, success = Open3.capture3(command)
 end
 
 # update_liquibase(MS_SQL[:jtds128p])
 # test_db(MS_SQL[:jtds128p], DBAPI[:s])
 # test_db(MS_SQL[:sql4p], DBAPI[:p])
+install_tomcat('tomcat')

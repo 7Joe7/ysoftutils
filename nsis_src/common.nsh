@@ -169,5 +169,60 @@ FunctionEnd
     ${Else}
         ${log} "${CONDITION} False"
     ${EndIf}
+    ${TEST_ERRORS}
 !macroend
 !define TEST_CONDITION `!insertmacro TEST_CONDITION`
+
+!macro TEST_CONDITION_WITH_PAR CONDITION PAR
+    ${If} ${${CONDITION}} ${PAR}
+        ${log} "${CONDITION} ${PAR} True"
+    ${Else}
+        ${log} "${CONDITION} ${PAR} False"
+    ${EndIf}
+    ${TEST_ERRORS}
+!macroend
+!define TEST_CONDITION_WITH_PAR `!insertmacro TEST_CONDITION_WITH_PAR`
+
+!macro TEST_ERRORS
+    IfErrors 0 +2
+    ${log} "!!!!!!!!!!!!!THERE ARE ERRORS!!!!!!!!!!!!!"
+    ClearErrors
+!macroend
+!define TEST_ERRORS `!insertmacro TEST_ERRORS`
+
+!macro PRP PROPERTY
+    ${log} "Property ${PROPERTY} has value $${PROPERTY}"
+!macroend
+!define PRP `!insertmacro PRP`
+
+!macro TEST_MACRO_RESULT MACRO_NAME
+    push $0
+    ${${MACRO_NAME}} $0
+    ${log} "${MACRO_NAME} result is $0"
+    pop $0
+!macroend
+!define TEST_MACRO_RESULT `!insertmacro TEST_MACRO_RESULT`
+
+!macro ASSERT_CONDITION CONDITION
+    ${If} ${${CONDITION}}
+        ${log} "${CONDITION} is true, should be true."
+        ${log} "TEST SUCCEEDED"
+    ${Else}
+        ${log} "${CONDITION} is false, should be true."
+        ${log} "!!!!!!!!!!!!!!!!!!!!!TEST FAILED!!!!!!!!!!!!!!!!!!!!"
+    ${EndIf}
+    ${TEST_ERRORS}
+!macroend
+!define ASSERT_CONDITION `!insertmacro ASSERT_CONDITION`
+
+!macro ASSERT_CONDITION_NOT CONDITION
+    ${If} ${${CONDITION}}
+        ${log} "${CONDITION} is true, should be false."
+        ${log} "!!!!!!!!!!!!!!!!!!!!!TEST FAILED!!!!!!!!!!!!!!!!!!!!"
+    ${Else}
+        ${log} "${CONDITION} is false, should be false."
+        ${log} "TEST SUCCEEDED"
+    ${EndIf}
+    ${TEST_ERRORS}
+!macroend
+!define ASSERT_CONDITION_NOT `!insertmacro ASSERT_CONDITION_NOT`
